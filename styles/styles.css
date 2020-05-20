@@ -10,56 +10,36 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 body {
     font-family: "Open Sans";
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.8;
     letter-spacing: 0.5px;
     word-wrap: break-word;
     font-weight: 400;
 }
 
+.nav-style {
+    position: relative;
+}
+
+.toggle-label {
+    font-family: "Open Sans";
+    font-size: 22px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    word-wrap: break-word;
+    font-weight: 400;
+    color: white;
+}
+
+.toggle-label:hover {
+    color: rgb(95, 95, 95);
+    text-decoration: none;
+}
 
 @media (max-width: 1040px) {
-.arlo_tm_mobile_header_wrap {
+.nav-style {
     display: block;
 }
-}
-
-.arlo_tm_mobile_header_wrap {
-    width: 100%;
-    height: auto;
-    position: fixed;
-    z-index: 11111111;
-    left: 0px;
-    top: 0px;
-    /* display: none; */
-}
-
-.arlo_tm_mobile_header_wrap .main_wrap {
-    width: 100%;
-    height: auto;
-    clear: both;
-    float: left;
-    padding: 30px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-image: url('images/geometric-dark.GIF');
-    border-bottom: 1px solid #ccc;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.arlo_tm_trigger .hamburger-box {
-    display: block;
-}
-
-.arlo_tm_trigger .hamburger-box {
-    display: block;
-}
-
-.arlo_tm_trigger .hamburger-box {
-    display: block;
 }
 
 .about, 
@@ -67,11 +47,13 @@ h1,
 .lead {
     font-family: "Montserrat";
     text-transform: uppercase;
+    z-index: -1;
 }
 
-h1 {
+.h1 {
     margin-top: 5%;
     color: white;
+    font-size: 48px;
 }
 
 .lead {
@@ -79,16 +61,22 @@ h1 {
     color: white;
 }
 
+.jumbo-line {
+    border-top: 1px solid rgb(95, 95, 95);
+}
+
 .button-top {
-    border: 2px solid white;;
-    /* background-color: white; */
+    border: 2px solid white;
     color: white;
-    margin: 0px;
     padding: 7px 21px;
     font-size: 16px;
     cursor: pointer;
 }
 
+.button-top:hover {
+    color: white;
+    background-color: rgb(95, 95, 95);;
+}
 
 .first-page {
     margin-left: 1%;
@@ -112,12 +100,14 @@ h1 {
     padding-top: 2%;
     padding-left: .5%;
     font-size: 200%;
+    width: 100%;
 }
 
 .about-me-img {
-    margin-bottom: 7%;
     border-right: 12px solid maroon;
     border-bottom: 12px solid maroon;
+    width: 50%;
+    height: 100%;
 }
 
 .intro-adds {
@@ -128,6 +118,7 @@ h1 {
 .summary {
     font-size: 25px;
     margin-left: 15%;
+    height: 100%;
 }
 
 .summary2 {
@@ -139,6 +130,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-left: 5%;
+    margin-right: 0px;
+    width: 100%;
 }
 
 .skills {
@@ -146,10 +139,6 @@ h1 {
     justify-content: space-between;
     margin-top: 2%;
     width: 60%;
-}
-
-.description {
-    width: 50%;
 }
 
 .my-skills {
@@ -175,6 +164,10 @@ h1 {
     margin-bottom: 15%;
 }
 
+.projects {
+    margin-top: 1%;
+}
+
 .contact-details {
     margin-top: 1%;
     background-color: rgb(245, 245, 245);
@@ -184,4 +177,5 @@ h1 {
     margin-top: 1%;
     margin-left: 2%;
     padding-bottom: 2%;
+    font-size: 18px;
 }

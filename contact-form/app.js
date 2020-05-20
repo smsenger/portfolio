@@ -19,20 +19,6 @@ app.get('/', (req, res) => {
     });
 });
 
-app.get('/contact', (req, res) => {
-    res.render('contact', {
-        title: "Contact Form",
-        submitted: false,
-    });
-});
-
-app.post('/contact', (req, res) => {  
-    res.render('contact', {
-        title: 'Thank you!',
-        submitted: true,
-    });
-});
-
 app.listen(PORT, () => {
   console.log(`Listening. Open http://localhost:${PORT} to view.`);
 });
