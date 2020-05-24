@@ -59,6 +59,7 @@ h1,
 .lead {
     margin-bottom: 5%;
     color: white;
+    opacity: .7;
 }
 
 .jumbo-line {
@@ -104,8 +105,8 @@ h1,
 }
 
 .about-me-img {
-    border-right: 12px solid maroon;
-    border-bottom: 12px solid maroon;
+    border-right: 12px solid rgb(95, 95, 95);
+    border-bottom: 12px solid rgb(95, 95, 95)
     width: 50%;
     height: 100%;
 }
